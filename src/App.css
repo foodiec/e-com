@@ -1,0 +1,198 @@
+*{
+  margin: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+  font-family: "Lato", sans-serif; 
+  font-size: 14px;
+}
+
+.bg-purple{
+  background: #2211a8;
+}
+
+@media (min-width: 1300px ){
+.container, .container-lg, .container-md, .container-sm, .containerxl {
+  min-width: 1200px;
+}}
+
+
+/* .loc ::-webkit-scrollbar( width: 8px; height: 8px; )
+backgrounf: #ccc; */
+
+.headerWrap{ border-bottom:1px solid rgba(0, 0, 0, 0.1); }
+
+.headerWrap .top-strip{
+  padding: 8px 0px;
+}
+
+.headerWrap .top-strip p{
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.headerWrap .header{
+  width: 100%;
+  height: auto;
+  padding: 25px 0px;
+}
+.logoWrap img {
+  width: 100%;
+}
+
+.headerWrap .header .part2 .countryDrop{
+  width: 170px;
+  height: 60px;
+  min-width: 170px;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 10px 15px !important;
+}
+
+.headerWrap .header .part2 .countryDrop{
+  text-align: left;
+  justify-content: flex-start !important;
+
+}
+
+.headerWrap .header .part2 .countryDrop .lable{
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  line-height: 16px;
+}
+
+.headerWrap .header .part2 .countryDrop .name{
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+  color: #4d16f291 !important;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.headerWrap .header .part2 .countryDrop span.ml-auto svg{
+    opacity: 0.7;
+}
+
+ .headerSearch{
+  width: 60%;
+  height: 60px;
+  background: #f3f4f7;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+ .headerSearch input{
+  background: transparent !important;
+  outline: none !important;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 45px;
+  border: 0px;
+  padding: 0px 20px;
+}
+ .headerSearch input::-webkit-input-placeholder{ color: rgba(0, 0, 0, 0.6); }
+ .headerSearch button{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 100;
+  min-width: 40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #000;
+}
+
+ .headerSearch button svg{
+  font-size: 25px; opacity: 0.8;
+}
+
+header .part3 .circle { align-items: center; justify-content: center;
+min-width: 45px; height: 45px; width: 45px; border-radius: 50px;
+border: 1px solid rgba(0, 0, 0, 0.1); color: #000;}
+
+header .part3 .circle svg { font-size: 22px;}
+
+.cart .price { -webkit-flow-into: 18px; color: rgba(0, 0, 0, 0.8); font-weight: 700;}
+.cart button { background: #fff1ee ;}
+.cart button svg{ color: red; }
+.cart .count { position: absolute; top: -6px; right: -4px; background: red;
+border-radius: 50%; color: #fff; width: 20px; height: 20px;}
+
+.loc .MuiPaper-elevation { padding: 25px; position: relative; }
+.loc .countryList { margin-bottom: 0px; max-height: 400px; overflow-y: scroll;
+overflow-x: hidden ;} 
+.loc .countryList li {width: 100%; list-style: none;}
+.loc .countryList li button {width: 100%; text-transform: capitalize !important; color: #000;
+justify-content: flex-start !important; padding: 10px 20px !important; }
+
+.loc .countryList li button:hover{ background: #f1f1f1 !important;}
+.loc .countryList li button.active{ background: #d8d2d2 !important;}
+
+.loc .closee { position: absolute; top: 10px; right: 10px; color: #000 !important;
+min-width: 40px !important; width: 40px !important; height: 40px !important;
+border-radius: 50% !important;  }
+
+.loc .closee svg{ font-size: 22px;}
+
+nav .newpart1{ max-width: 20%; flex: 0 0 20%;}
+/* nav .newpart2{ max-width: 20%; flex: 0 0 20%;} */
+
+nav .newpart1 .catwrapper { position: relative;}
+nav .newpart1 .catwrapper .sidebarnav { width: 100%; height: 400px; background: #fff;
+position: absolute; top: 100%; left: 0px; border: 1px solid rgba(0, 0, 0, 0.1);}
+
+nav .newpart1 .catwrapper .sidebarnav ul li {width: 100%; list-style: none; }
+nav .newpart1 .catwrapper .sidebarnav ul li button { color: #000; width: 100%;
+justify-content: flex-start;}
+
+nav .allCart { background: #2bbef9; padding: 8px 30px; border-radius: 30px; }
+nav .allCart *{ color: #fff;}
+nav .allCart:hover{ background: #2bbef9;}
+nav .allCart .text{ font-weight: 600; }
+
+nav .allCart .icon1 svg {font-size: 20px;}
+nav .allCart .icon2 svg {font-size: 15px;}
+
+
+nav .newpart2 ul{ margin-bottom: 0px;}
+nav .newpart2 ul li { padding-bottom: 20px;}
+nav .newpart2 ul li a{ text-decoration: none; }
+nav .newpart2 ul li a button{font-size: 14px; font-weight: 600; text-decoration: none; 
+color: rgba(0, 0, 0, 0.7); text-transform: uppercase; display: flex; 
+align-items: center; padding: 8px 15px; transition: all 0.2s ease-in-out;
+border-radius: 25px;}
+nav .newpart2 ul li a { font-size: 20px}
+nav .newpart2 ul li a:hover{background: #f0faff; color: #2bbef9;}
+
+nav .newpart2 ul li { position: relative;}
+nav .newpart2 ul li .submenu {position: absolute; top: 150%; left: 0px; min-width: 200px;
+background: #fff; opacity: 0; visibility: hidden; transform: all 0.2s ease-in-out;}
+nav .newpart2 ul li .submenu a { display: block ; width: 100%; }
+nav .newpart2 ul li .submenu a button{ width: 100%; justify-content: flex-start;
+border-radius: 0px; text-transform: capitalize; font-weight: 600;}
+ 
+
+nav .newpart2 ul li .submenu a button:hover { background: #f1f1f1 !important;}
+
+nav .newpart2 ul li:hover .submenu { opacity: 1; visibility: inherit; top: 100%;} 
+/* submenu dhek rha hai */
+
+
+
+
+
+
+
+
+
+
+
+
