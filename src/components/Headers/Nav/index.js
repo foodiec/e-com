@@ -1,24 +1,34 @@
 
 import { Button } from '@mui/material';
+import { useState } from 'react';
 // import { CiHome } from 'react-icons/ci';
 import { FaAngleDown } from 'react-icons/fa6';
 import { IoIosMenu } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
- return (
-    <nav>
-                    <div className='container'>
-                        <div className='row'>
-                            <div className='col-sm-3 newpart1'>
-                                <div className='catwrapper'>
-                                <Button className='allCart'>
-                                    <span className='icon1 mr-2'><IoIosMenu/></span>
-                                    <span class="text">ALL CATEGORIES</span>
-                                    <span className='icon2 ml-2'><FaAngleDown/></span>
-                                </Button>
-                                    <div className='sidebarnav'>
+
+    const [isOpenSidebarNavVal, setisOpenSidebarNavVal] = useState(false);
+        return (
+            <nav>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-sm-3 newpart1'>
+                        <div className='catwrapper'>
+                        <Button className='allCart align-items-center' onClick=
+                        {() => setisOpenSidebarNavVal(!isOpenSidebarNavVal)}> 
+                            <span className='icon1 mr-2'><IoIosMenu/></span>
+                            <span class="text">ALL CATEGORIES</span>
+                            <span className='icon2 ml-2'><FaAngleDown/></span>
+                        </Button>
+                                    <div className={`sidebarnav ${isOpenSidebarNavVal === true ? 'open' : ''}`}>
                                         <ul>
+                                            <li><Link to="/"><Button>Men</Button></Link></li>
+                                            <li><Link to="/"><Button>Wpmen</Button></Link></li>
+                                            <li><Link to="/"><Button>beauty</Button></Link></li>
+                                            <li><Link to="/"><Button>watches</Button></Link></li>
+                                            <li><Link to="/"><Button>kids</Button></Link></li>
+                                            <li><Link to="/"><Button>gift</Button></Link></li>
                                             <li><Link to="/"><Button>Men</Button></Link></li>
                                             <li><Link to="/"><Button>Wpmen</Button></Link></li>
                                             <li><Link to="/"><Button>beauty</Button></Link></li>
